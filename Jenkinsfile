@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pipeline {
     agent{
         node {
@@ -11,8 +12,8 @@ environment {
         stage('build') {
             steps {
                 sh "mvn clean deploy"
-                git branch: 'main', url: 'https://github.com/chandanprasadpradhan/tweet-trend-new.git'
             }
         }
     }
 }
+
