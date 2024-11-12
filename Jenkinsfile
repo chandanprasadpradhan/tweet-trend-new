@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pipeline {
     agent{
         node {
@@ -6,14 +5,13 @@ pipeline {
         }
     }
 environment {
-    PATH = "/opt/apache-maven-3.9.9/bin:$PATH"
+    PATH = "/opt/apache-maven-3.9.9/bin/bin:$PATH"
 }
     stages {
         stage('build') {
             steps {
-                sh "mvn clean deploy"
+                sh 'mvn clean deploy'
             }
         }
     }
 }
-
