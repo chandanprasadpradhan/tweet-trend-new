@@ -1,14 +1,16 @@
 [jenkins-master]
-10.1.1.172
+0.1.1.16
+
 
 [jenkins-master:vars]
 ansible_user=ubuntu
-ansible_ssh_private_key_file=ddp.pem
+ansible_ssh_private_key_file=chandandemo.pem
 
 [jenkins-slave]
-10.1.1.187
+10.1.1.215
+
 
 
 [jenkins-slave:vars]
 ansible_user=ubuntu
-ansible_ssh_private_key_file=/opt/ddp.pem
+ansible_ssh_private_key_file=/opt/chandandemo.pem
